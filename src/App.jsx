@@ -5,7 +5,7 @@ const App = () => {
   const [ws, setWs] = useState(null);
 
   useEffect(() => {
-    const websocket = new WebSocket('ws://192.168.1.105:3000');
+    const websocket = new WebSocket('wss://server-controlled.onrender.com');
 
     websocket.onopen = () => {
       console.log('WebSocket connected');
